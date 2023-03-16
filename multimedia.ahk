@@ -40,3 +40,6 @@ KeyMedia(ThisHotKey)
     MsgBox("Exiting", "Multimedia Script")
     ExitApp 0
 }
+
+#NumpadAdd::Volume_Up ;Windows/command + numpad plus
+#NumpadSub::Volume_Down ;Windows/command + numpad minus
