@@ -1,5 +1,5 @@
 ﻿#Requires AutoHotkey v2.0
-Media_Play_Pause::
+Media_Play_Pause:: ;Play/Pause button
 KeyMedia(ThisHotKey)
 {
     static mpp_presses := 0
@@ -29,7 +29,14 @@ KeyMedia(ThisHotKey)
         }
     }
 }
-#Media_Play_Pause::{
+#Media_Play_Pause::{ ;Windows/Command + Play/Pause
+    MsgBox("Exiting", "Multimedia Script")
+    ExitApp 0
+}
+
+#NumpadMult::KeyMedia(A_ThisHotkey) ;Windows/command + numpad asterisk
+
+#+NumpadMult::{ ;Windows/Command + shift + numpad asterisk
     MsgBox("Exiting", "Multimedia Script")
     ExitApp 0
 }
